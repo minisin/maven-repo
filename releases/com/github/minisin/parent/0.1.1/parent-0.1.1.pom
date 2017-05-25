@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.calfzhou</groupId>
+    <groupId>com.github.minisin</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,12 +16,12 @@
 
     <distributionManagement>
         <repository>
-            <id>calfzhou-github</id>
-            <url>https://github.com/calfzhou/maven-repo/tree/master/releases</url>
+            <id>minisin-github</id>
+            <url>https://github.com/minisin/maven-repo/tree/master/releases</url>
         </repository>
         <snapshotRepository>
-            <id>calfzhou-github</id>
-            <url>https://github.com/calfzhou/maven-repo/tree/master/snapshots</url>
+            <id>minisin-github</id>
+            <url>https://github.com/minisin/maven-repo/tree/master/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -32,10 +32,10 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
                     <altReleaseDeploymentRepository>
-                        calfzhou-github::default::file:${calfzhou.repo.local}/releases
+                        minisin-github::default::file:${minisin.repo.local}/releases
                     </altReleaseDeploymentRepository>
                     <altSnapshotDeploymentRepository>
-                        calfzhou-github::default::file:${calfzhou.repo.local}/snapshots
+                        minisin-github::default::file:${minisin.repo.local}/snapshots
                     </altSnapshotDeploymentRepository>
                 </configuration>
             </plugin>
@@ -48,24 +48,28 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>2.5</version>
+                    <!--<version>2.5</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.1</version>
+                    <!--<version>2.8.1</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
                     <version>2.5.1</version>
+                    <!--<version>2.5.1</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.3</version>
+                    <!--<version>3.3</version>-->
                 </plugin>
 
                 <!-- package related official plugins -->
@@ -73,21 +77,26 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>2.4</version>
+                    <!--<version>2.4</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>2.4</version>
+                    <!--<version>2.4</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
+                    <!--<version>3.1</version>-->
                     <configuration>
                         <source>1.7</source>
                         <target>1.7</target>
+                        <!--<source>1.7</source>-->
+                        <!--<target>1.7</target>-->
                     </configuration>
                 </plugin>
 
@@ -95,18 +104,21 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>2.6</version>
+                    <!--<version>2.6</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.17</version>
+                    <!--<version>2.17</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <version>2.17</version>
+                    <!--<version>2.17</version>-->
                     <executions>
                         <execution>
                             <goals>
@@ -148,18 +160,21 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-scm-plugin</artifactId>
                     <version>1.9</version>
+                    <!--<version>1.9</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>2.8</version>
+                    <!--<version>2.8</version>-->
                 </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
                     <version>1.7</version>
+                    <!--<version>1.7</version>-->
                 </plugin>
             </plugins>
         </pluginManagement>
